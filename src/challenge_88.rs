@@ -1,12 +1,12 @@
 /*
-    - Given a vector of integers, return the index i such that the sum of all elements to 
+    - Given a vector of integers, return the index i such that the sum of all elements to
     the left of i equals the sum of all elements to the right of i.
     - If multiple such indices exist, return the middlemost one (closest to the center).
     - If none exist, return -1.
 */
 
 pub fn mirror_index(arr: &[i32]) -> i32 {
-    let mut result:i32 = -1;
+    let mut result: i32 = -1;
     let mut results: Vec<(i32, i32)> = Vec::new();
     let middle = arr.len() / 2;
 

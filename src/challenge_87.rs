@@ -7,7 +7,7 @@ pub fn compress_string(input: &str) -> String {
     let mut letters_with_count: Vec<(char, u32)> = Vec::new();
     let mut previous_letter: Option<char> = None;
     let mut result = String::new();
-    
+
     if input.len() > 0 {
         // Build vec with chars and amount
         for letter in input.chars() {
@@ -32,7 +32,7 @@ pub fn compress_string(input: &str) -> String {
             result.push_str(&vec_as_string);
         }
     }
-    
+
     result
 }
 
